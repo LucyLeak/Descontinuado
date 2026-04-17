@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo Static site - skipping install",
+  "buildCommand": "echo Static site - skipping build",
   "headers": [
     {
       "source": "/data/:path*",
