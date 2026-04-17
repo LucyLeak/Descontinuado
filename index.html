@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descontinuado // Terminal</title>
+  <meta
+    name="description"
+    content="Terminal narrativo para ARG com respostas guiadas por JSON, efeito CRT vermelho e animacoes de glitch."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="terminal-shell">
+    <section class="terminal-screen" aria-label="Terminal do ARG">
+      <header class="terminal-header">
+        <p class="terminal-title">DESCONTINUADO // LINHA SEGURA</p>
+        <p class="terminal-status">SINAL INSTAVEL // MONITORAMENTO ATIVO</p>
+      </header>
+
+      <section
+        id="chat-log"
+        class="chat-log"
+        aria-live="polite"
+        aria-label="Historico da conversa"
+      ></section>
+
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <label class="sr-only" for="chat-input">Digite sua mensagem</label>
+        <div class="input-shell">
+          <span class="prompt-mark" aria-hidden="true">&gt;</span>
+          <input
+            id="chat-input"
+            name="message"
+            type="text"
+            maxlength="220"
+            placeholder="Envie uma mensagem..."
+            spellcheck="false"
+            required
+          >
+        </div>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </section>
+  </main>
+
+  <template id="message-template">
+    <article class="message">
+      <div class="message-label"></div>
+      <div class="message-text" data-text=""></div>
+    </article>
+  </template>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>

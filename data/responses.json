@@ -1,0 +1,388 @@
+{
+  "assistantLabel": "TRANSMISSAO",
+  "userLabel": "USUARIO",
+  "initialMemory": {
+    "flags": ["session-open"]
+  },
+  "bootSequence": [
+    {
+      "id": "boot-01",
+      "label": "SISTEMA",
+      "delayBefore": 300,
+      "script": [
+        { "type": "text", "value": "linha segura encontrada" },
+        { "type": "pause", "duration": 220 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "criptografia parcial restaurada" }
+      ]
+    },
+    {
+      "id": "boot-02",
+      "label": "TRANSMISSAO",
+      "delayBefore": 460,
+      "script": [
+        { "type": "text", "value": "Se estiver lendo isso, nao diga meu nome." },
+        { "type": "pause", "duration": 260 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Pergunte o que quiser. Algumas coisas ainda respondem." }
+      ]
+    }
+  ],
+  "fallbackReplies": [
+    {
+      "id": "fallback-01",
+      "label": "TRANSMISSAO",
+      "script": [
+        { "type": "text", "value": "Essa frase nao existe nos registros." },
+        { "type": "pause", "duration": 220 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Tente algo mais especifico." }
+      ]
+    },
+    {
+      "id": "fallback-02",
+      "label": "TRANSMISSAO",
+      "script": [
+        { "type": "text", "value": "O sinal tentou responder" },
+        { "type": "pause", "duration": 150 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 150 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 150 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 260 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Nada util foi recuperado." }
+      ]
+    },
+    {
+      "id": "fallback-03",
+      "label": "TRANSMISSAO",
+      "script": [
+        { "type": "text", "value": "Nao reconheco esse padrao." },
+        { "type": "pause", "duration": 220 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Talvez voce esteja perto demais." }
+      ]
+    }
+  ],
+  "replies": [
+    {
+      "id": "who-is-luxia",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e luxia"]
+      },
+      "text": "Mensagem"
+    },
+    {
+      "id": "who-is-matheus",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e matheus"]
+      },
+      "text": "Protetor"
+    },
+    {
+      "id": "who-is-paulo",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e paulo"]
+      },
+      "text": "Observador"
+    },
+    {
+      "id": "who-is-eduardo",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e eduardo"]
+      },
+      "text": "Observador"
+    },
+    {
+      "id": "who-is-pedro",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e pedro"]
+      },
+      "text": "Veio me buscar"
+    },
+    {
+      "id": "who-is-gabriel",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e gabriel"]
+      },
+      "text": "Apresentador"
+    },
+    {
+      "id": "what-is-all-this",
+      "priority": 50,
+      "match": {
+        "exact": ["o que e tudo isso"]
+      },
+      "text": "Uma historia"
+    },
+    {
+      "id": "who-are-you-exact",
+      "priority": 50,
+      "match": {
+        "exact": ["quem e voce"]
+      },
+      "text": "corpo que boia"
+    },
+    {
+      "id": "my-little-world",
+      "priority": 50,
+      "match": {
+        "exact": ["meu mundinho"]
+      },
+      "text": "Desaparecido"
+    },
+    {
+      "id": "friends",
+      "priority": 50,
+      "match": {
+        "exact": ["amigos"]
+      },
+      "text": "Importantes"
+    },
+    {
+      "id": "pedro",
+      "priority": 50,
+      "match": {
+        "exact": ["pedro"]
+      },
+      "text": "Dono do meu mundo, pedro era iluminado"
+    },
+    {
+      "id": "paulo",
+      "priority": 50,
+      "match": {
+        "exact": ["paulo"]
+      },
+      "text": "Estava la durante o incidente"
+    },
+    {
+      "id": "eduardo",
+      "priority": 50,
+      "match": {
+        "exact": ["eduardo"]
+      },
+      "text": "Nao conheco"
+    },
+    {
+      "id": "matheus",
+      "priority": 50,
+      "match": {
+        "exact": ["matheus"]
+      },
+      "text": "Agressor, me deixe longe dele"
+    },
+    {
+      "id": "luxia",
+      "priority": 50,
+      "match": {
+        "exact": ["luxia"]
+      },
+      "text": "Corpo que boia"
+    },
+    {
+      "id": "catarina",
+      "priority": 50,
+      "match": {
+        "exact": ["catarina"]
+      },
+      "text": "Sou eu"
+    },
+    {
+      "id": "world",
+      "priority": 50,
+      "match": {
+        "exact": ["mundo"]
+      },
+      "text": "Corrompido"
+    },
+    {
+      "id": "voices",
+      "priority": 50,
+      "match": {
+        "exact": ["vozes"]
+      },
+      "text": "Deles"
+    },
+    {
+      "id": "videos",
+      "priority": 50,
+      "match": {
+        "exact": ["videos"]
+      },
+      "text": "Driver"
+    },
+    {
+      "id": "greeting",
+      "priority": 10,
+      "match": {
+        "exact": ["ola", "oi", "hello", "alguem ai"],
+        "contains": ["boa noite", "bom dia", "boa tarde"]
+      },
+      "setFlags": ["greeted"],
+      "script": [
+        { "type": "text", "value": "Oi" },
+        { "type": "pause", "duration": 140 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 200 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 200 },
+        { "type": "text", "value": "." },
+        { "type": "pause", "duration": 260 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Voce nao deveria estar aqui tao cedo." }
+      ]
+    },
+    {
+      "id": "who-are-you",
+      "priority": 9,
+      "match": {
+        "contains": ["quem esta ai", "com quem estou falando", "quem fala"]
+      },
+      "script": [
+        { "type": "text", "value": "Eu sou" },
+        { "type": "pause", "duration": 180 },
+        { "type": "text", "value": " mar" },
+        { "type": "pause", "duration": 120 },
+        { "type": "delete", "count": 3 },
+        { "type": "text", "value": " o que restou." },
+        { "type": "pause", "duration": 220 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Nome nao ajuda mais." }
+      ]
+    },
+    {
+      "id": "help",
+      "priority": 8,
+      "match": {
+        "contains": ["ajuda", "socorro", "o que eu faco", "preciso de ajuda"]
+      },
+      "setFlags": ["asked-help"],
+      "script": [
+        { "type": "text", "value": "Leia tudo." },
+        { "type": "pause", "duration": 180 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Nao confie nas horas." },
+        { "type": "pause", "duration": 200 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Se encontrar a palavra-chave, a porta muda." }
+      ]
+    },
+    {
+      "id": "keyword-hint",
+      "priority": 11,
+      "match": {
+        "contains": ["palavra chave", "palavra-chave", "senha", "codigo"],
+        "requiresFlags": ["asked-help"]
+      },
+      "setFlags": ["knows-keyword"],
+      "script": [
+        { "type": "text", "value": "A palavra foi riscada dos arquivos." },
+        { "type": "pause", "duration": 240 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Mas sobraram ecos: VERMELHO, TORRE, QUEDA." }
+      ]
+    },
+    {
+      "id": "red-keyword",
+      "priority": 13,
+      "match": {
+        "contains": ["vermelho", "torre", "queda"]
+      },
+      "setFlags": ["keyword-used", "archive-open"],
+      "script": [
+        { "type": "text", "value": "Acesso parcial concedido." },
+        { "type": "pause", "duration": 220 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Arquivo 03 recuperado" },
+        { "type": "pause", "duration": 150 },
+        { "type": "text", "value": ":" },
+        { "type": "pause", "duration": 150 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "\"Eles desligaram a cidade antes do amanhecer.\"" }
+      ]
+    },
+    {
+      "id": "where",
+      "priority": 7,
+      "match": {
+        "contains": ["onde estou", "onde eu estou", "onde estamos", "que lugar e esse"]
+      },
+      "script": [
+        { "type": "text", "value": "Entre duas camadas de ruido." },
+        { "type": "pause", "duration": 200 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Este terminal nao fica em um lugar." }
+      ]
+    },
+    {
+      "id": "why",
+      "priority": 7,
+      "match": {
+        "contains": ["o que aconteceu", "por que", "porque", "o que houve"]
+      },
+      "script": [
+        { "type": "text", "value": "Tentaram apagar a sequencia." },
+        { "type": "pause", "duration": 210 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Apagaram pessoas junto." }
+      ]
+    },
+    {
+      "id": "archive-followup",
+      "priority": 14,
+      "match": {
+        "contains": ["arquivo", "registro", "documento", "prova"],
+        "requiresFlags": ["archive-open"]
+      },
+      "script": [
+        { "type": "text", "value": "Restam 4 registros." },
+        { "type": "pause", "duration": 200 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "1. O som da sirene." },
+        { "type": "pause", "duration": 160 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "2. A torre vazia." },
+        { "type": "pause", "duration": 160 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "3. As fitas queimadas." },
+        { "type": "pause", "duration": 160 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "4. O nome que nao posso escrever." }
+      ]
+    },
+    {
+      "id": "name",
+      "priority": 7,
+      "match": {
+        "regex": ["meu nome e .+", "me chamo .+", "sou .+"]
+      },
+      "script": [
+        { "type": "text", "value": "Entendido." },
+        { "type": "pause", "duration": 180 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Vou fingir que nao ouvi seu nome." }
+      ]
+    },
+    {
+      "id": "goodbye",
+      "priority": 8,
+      "match": {
+        "contains": ["tchau", "adeus", "ate logo", "encerrar"]
+      },
+      "script": [
+        { "type": "text", "value": "Nao feche a janela por muito tempo." },
+        { "type": "pause", "duration": 240 },
+        { "type": "linebreak" },
+        { "type": "text", "value": "Ela pode nao abrir de novo." }
+      ]
+    }
+  ]
+}
